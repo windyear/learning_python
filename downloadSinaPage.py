@@ -16,8 +16,8 @@ while True:
 data=b''.join(buffer)
 s.close()
 
-#header,html = data.split(b'\n\n',1)
-#print(header.decode('utf-8'))
+header,html = data.split(b'\n\n',1)
+print(header.decode('utf-8'))
 
 with open(r'D:\windyear_files\testfiles\sina_test.html','wb') as f:
     f.write(data)
